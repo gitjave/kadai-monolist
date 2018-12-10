@@ -26,20 +26,20 @@ footer{
   background-size: cover;/*縦横比を保ちかつ領域を覆う最小限の大きさに画像をリサイズ&配置*/
 }
 .cover .cover-inner{
-  height: 100%; /*ようわからん*/
-  margin: auto; /*ようわからん*/
+  height: 100%; /*コンテンツでフルぶっぱ*/
+  margin: auto; /*ブラウザが決める。奴は上下は0に左右は中央揃えになるように計算する*/
   display: table; /*初期値は横幅マックスだけどそうじゃなくなる*/
   
 }
 .cover .cover-inner .cover-contents {
-  display: table-cell ;/*テーブルのセル*/
-  vertical-align: middle;/*真ん中*/
-  text-align: center;/*真ん中*/
+  display: table-cell ;/*親に対する空き領域はpaddingで埋める*/
+  vertical-align: middle;/*インラインっぽいのであるセルを上下の真ん中に*/
+  text-align: center;/*今回は比較的横幅の狭い<a>要素を中央に*/
   position: relative;/*ようわからん*/
 }
 .cover .cover-inner .cover-contents h1 {
-  margin: 0 0 20px 0;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 0.15em;
+  margin: 0 0 20px 0;/* <a>との幅開け*/
+  color: #fff;/* 文字の色 */
+  font-weight: bold;/* 文字の幅 */
+  letter-spacing: 0.15em;/* 文字の間隔（文字の高さを基準（1em)にして */
 }
