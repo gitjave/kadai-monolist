@@ -43,3 +43,26 @@ footer{
   font-weight: bold;/* 文字の幅 */
   letter-spacing: 0.15em;/* 文字の間隔（文字の高さを基準（1em)にして */
 }
+
+/* search */
+.search{
+  margin-bottom: 20px;
+}
+
+/* item */
+.item .panel-body{
+  height: 70px;
+}
+.item .panel-heading{
+  height: 250px;
+}
+.item .panel-heading img{
+  height: 100%; /*　縦を最大値とって　*/
+  max-width: 100%; /*　比率そのままにしたいけど、難しいなら横幅いっぱいまで　*/
+}
+p.item-title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
