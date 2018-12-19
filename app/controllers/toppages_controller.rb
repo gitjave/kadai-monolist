@@ -1,5 +1,5 @@
 class ToppagesController < ApplicationController
   def index
-    @items = Item.order("updated_at DESC")
+    @items = Item.uniq.order("updated_at DESC")
   end
 end
