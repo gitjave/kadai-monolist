@@ -10,7 +10,6 @@ class ItemsController < ApplicationController
         imageFlag: 1,
         hits: 20
       })
-      
       results.each do |result|
         item = Item.find_or_initialize_by(read(result))
         @items << item
